@@ -1,0 +1,12 @@
+/.venv/
+/.claude/
+/CLAUDE.md
+
+# Python / packaging artifacts
+__pycache__/
+*.egg-info/
+/build/
+/dist/
+
+# IDE
+/.idea/

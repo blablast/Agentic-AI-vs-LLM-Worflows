@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-vs-workflow-bench"
+version = "0.1.0"
+description = "Token-cost benchmark: LLM workflow vs agentic tool-calling loop on the same task and model."
+requires-python = ">=3.13"
+dependencies = ["ollama"]
+
+[project.optional-dependencies]
+chart = ["matplotlib"]
+
+[tool.setuptools]
+# Flat layout: these standalone modules are the project (no package directory).
+py-modules = ["main", "agent", "workflow", "multiagent", "logic", "data", "prompts", "utils", "report"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+warn_unused_ignores = true
+ignore_missing_imports = true
