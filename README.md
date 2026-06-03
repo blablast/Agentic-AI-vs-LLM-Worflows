@@ -27,10 +27,8 @@ The multi-agent grows **linearly** with the number of parts (4, 4, 6, 6, 8 LLM c
 
 ## Charts
 
-![Total tokens: workflow vs agent vs multi-agent](run_20260603_151333_on_total.png)
-![Input vs output token split](run_20260603_151333_on_io.png)
-
-> Charts are produced by `--chart`. Commit the two PNGs your run generates (e.g. `run_<timestamp>_on_total.png` and `_io.png`) next to this README, or update the paths above.
+![Total tokens: workflow vs agent vs multi-agent](results/run_20260603_151333_on_total.png)
+![Input vs output token split](results/run_20260603_151333_on_io.png)
 
 ## Run it
 
